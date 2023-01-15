@@ -9,21 +9,19 @@ Console.Write("Введите первое число (a): ");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число (b): ");
 int b = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Число a = " + a);
+Console.WriteLine("Число b = " + b);
+
 if (a > b)
 {
-    Console.WriteLine("Число a = " + a);
-    Console.WriteLine("Число b = " + b);
     Console.WriteLine("Число a больше чила b");
 }
 else if (a < b)
 {
-    Console.WriteLine("Число a = " + a);
-    Console.WriteLine("Число b = " + b);
     Console.WriteLine("Число b больше числа a");
 }
 else
 {
-    Console.WriteLine("Число a = " + a);
-    Console.WriteLine("Число b = " + b);
     Console.WriteLine("Числа a и b равны");
 };
