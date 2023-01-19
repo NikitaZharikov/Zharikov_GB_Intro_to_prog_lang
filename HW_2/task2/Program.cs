@@ -5,14 +5,14 @@
 // 78->третьей цифры нет
 // 32679 -> 6
 
-Console.Write("Введите трехзначное число: ");
+Console.Write("Введите число: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
-int result = num1 % 100 % 10;
-if (num1 < 1 || num1 < 100)
+int result = num1 % 10;
+if (num1 < 100)
 {
-    Console.WriteLine("Число " + num1 + " не подходит");
+    Console.WriteLine("У числа " + num1 + " нет третьей цифры");
 }
 else
 {
     Console.WriteLine("Третья цифра числа " + num1 + " будет " + result);
-};
+}
