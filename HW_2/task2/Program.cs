@@ -6,24 +6,21 @@
 // 32679 -> 6
 
 Console.Write("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine());
-int result1 = num % 10;
-int result2 = (num / 10) % 10;
-int result3 = (num / 100) % 10;
+int numRead = Convert.ToInt32(Console.ReadLine());
+int result = 0;
 
-if (num < 100)
+if (numRead >= 100)
 {
-    Console.WriteLine("У числа " + num + " нет третьей цифры");
-}
-else if (num >= 100 && num < 1000)
-{
-    Console.WriteLine("Третья цифра числа " + num + " будет " + result1);
-}
-else if (num > 1000 && num < 10000)
-{
-    Console.WriteLine("Третья цифра числа " + num + " будет " + result2);
+    int num = numRead;
+    while (num > 999)
+    {
+        num = num / 10;
+    }
+
+    result = num % 10;
+    Console.WriteLine("Третья цифра числа " + numRead + " будет " + result);
 }
 else
 {
-    Console.WriteLine("Третья цифра числа " + num + " будет " + result3);
+    Console.WriteLine("У числа " + numRead + " нет третьей цифры");
 }
