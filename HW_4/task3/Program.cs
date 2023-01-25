@@ -2,6 +2,12 @@
 
 // 1, 2, 5, 7, 19, -5, 0, -11 -> [1, 2, 5, 7, 19, -5, 0, -11]
 
+Console.WriteLine("");
+Console.WriteLine("*****************************************");
+Console.WriteLine("Программа ввода и вывода массива");
+Console.WriteLine("*****************************************");
+Console.WriteLine("");
+
 Console.Write("Введите размер массива: ");
 int arrayCount = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[arrayCount];

@@ -4,9 +4,15 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-Console.WriteLine("Введите число которое хотите возвести в степень: ");
+Console.WriteLine("");
+Console.WriteLine("*****************************************");
+Console.WriteLine("Программа для возведения числа в степень");
+Console.WriteLine("*****************************************");
+Console.WriteLine("");
+
+Console.Write("Введите число которое хотите возвести в степень: ");
 double number = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Введите степень в которую хотите возвести: ");
+Console.Write("Введите степень в которую хотите возвести: ");
 double numberToPower = Convert.ToDouble(Console.ReadLine());
 double result = number;
 

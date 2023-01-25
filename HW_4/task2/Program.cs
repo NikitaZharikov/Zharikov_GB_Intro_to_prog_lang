@@ -3,8 +3,13 @@
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
+Console.WriteLine("");
+Console.WriteLine("*****************************************");
+Console.WriteLine("Программа для сложения всех цифр в числе");
+Console.WriteLine("*****************************************");
+Console.WriteLine("");
 
-Console.WriteLine("Введите число чтобы узнать сумму его цифр: ");
+Console.Write("Введите число чтобы узнать сумму его цифр: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int sum = 0;
 
