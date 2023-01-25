@@ -12,7 +12,7 @@ double result = number;
 
 void NumPow()
 {
-    for (int i = 0; i < numberToPower; i++)
+    for (int i = 1; i < numberToPower; i++)
     {
         result *= number;
     }
@@ -21,5 +21,3 @@ void NumPow()
 }
 
 NumPow();
-
-
