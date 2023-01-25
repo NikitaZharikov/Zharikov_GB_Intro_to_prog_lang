@@ -12,22 +12,22 @@ Console.WriteLine("*****************************************");
 Console.WriteLine("");
 
 // Интерактивный код
-// Console.Write("Введите число чтобы узнать сумму его цифр: ");
-// int num = Convert.ToInt32(Console.ReadLine());
-// int sum = 0;
+Console.Write("Введите число чтобы узнать сумму его цифр: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int sum = 0;
 
-// void SumOfNumbsInteract()
-// {
-//     while (num != 0)
-//     {
-//         sum += num % 10;
-//         num /= 10;
-//     }
+void SumOfNumbsInteract()
+{
+    while (num != 0)
+    {
+        sum += num % 10;
+        num /= 10;
+    }
 
-//     Console.WriteLine("Сумма всех цифр в числе равна: " + sum);
-// }
+    Console.WriteLine("Сумма всех цифр в числе равна: " + sum);
+}
 
-// SumOfNumbsInteract();
+SumOfNumbsInteract();
 
 
 // Легкий код
