@@ -16,7 +16,7 @@ Console.Write("Введите степень в которую хотите во
 double numberToPower = Convert.ToDouble(Console.ReadLine());
 double result = number;
 
-void NumPow()
+void NumPowInteract()
 {
     for (int i = 1; i < numberToPower; i++)
     {
@@ -26,4 +26,17 @@ void NumPow()
     Console.WriteLine("Возведение числа " + number + " в степень " + numberToPower + " равно: " + result);
 }
 
-NumPow();
+NumPowInteract();
+
+double NumPowLight(double number, double numberToPower)
+{
+    double result = number;
+    for (int i = 1; i < numberToPower; i++)
+    {
+        result *= number;
+    }
+    return result;
+}
+
+double finalResult = NumPowLight(5, 5);
+Console.WriteLine(finalResult);
