@@ -11,13 +11,14 @@ Console.WriteLine("*****************************************");
 Console.WriteLine("");
 
 Console.Write("Введите число которое хотите возвести в степень: ");
-double number = Convert.ToDouble(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите степень в которую хотите возвести: ");
-double numberToPower = Convert.ToDouble(Console.ReadLine());
-double result = number;
+int numberToPower = Convert.ToInt32(Console.ReadLine());
+
 
 void NumPowInteract()
 {
+    int result = number;
     for (int i = 1; i < numberToPower; i++)
     {
         result *= number;
@@ -28,15 +29,15 @@ void NumPowInteract()
 
 NumPowInteract();
 
-double NumPowLight(double number, double numberToPower)
-{
-    double result = number;
-    for (int i = 1; i < numberToPower; i++)
-    {
-        result *= number;
-    }
-    return result;
-}
+// int NumPowLight(int number, int numberToPower)
+// {
+//     int result = number;
+//     for (int i = 1; i < numberToPower; i++)
+//     {
+//         result *= number;
+//     }
+//     return result;
+// }
 
-double finalResult = NumPowLight(5, 5);
-Console.WriteLine(finalResult);
+// int finalResult = NumPowLight(5, 5);
+// Console.WriteLine(finalResult);
